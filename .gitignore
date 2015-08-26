@@ -9,3 +9,5 @@
 *.csproj
 *.user
 *.sln
+.idea/
+/dist
