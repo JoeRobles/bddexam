@@ -59,8 +59,73 @@
                         expect(text).toBe('12345 abcde 6789 [more]');
                     });
                 });
-            })
+            });
         });
 
+        it('exam test', function () {
+            describe('first click on first link', function () {
+                element.all(by.css("exam-component button")).get(0).click().then(function () {
+                    element.all(by.css("exam-component button")).get(0).getText().then(function (text) {
+                        expect(text).toBe('11');
+                    });
+                });
+            });
+
+            describe('first click on second link', function () {
+                element.all(by.css("exam-component button")).get(1).click().then(function () {
+                    element.all(by.css("exam-component button")).get(1).getText().then(function (text) {
+                        expect(text).toBe('12');
+                    });
+                });
+            });
+
+            describe('first click on third link', function () {
+                element.all(by.css("exam-component button")).get(2).click().then(function () {
+                    element.all(by.css("exam-component button")).get(2).getText().then(function (text) {
+                        expect(text).toBe('13');
+                    });
+                });
+            });
+
+            describe('first click on fourth link', function () {
+                element.all(by.css("exam-component button")).get(3).click().then(function () {
+                    element.all(by.css("exam-component button")).get(3).getText().then(function (text) {
+                        expect(text).toBe('14');
+                    });
+                });
+            });
+
+            describe('second click on fourth link', function () {
+                element.all(by.css("exam-component button")).get(3).click().then(function () {
+                    element.all(by.css("exam-component button")).get(3).getText().then(function (text) {
+                        expect(text).toBe('15');
+                    });
+                });
+            });
+
+            describe('second click on third link', function () {
+                element.all(by.css("exam-component button")).get(2).click().then(function () {
+                    element.all(by.css("exam-component button")).get(2).getText().then(function (text) {
+                        expect(text).toBe('16');
+                    });
+                });
+            });
+
+            describe('second click on second link', function () {
+                element.all(by.css("exam-component button")).get(1).click().then(function () {
+                    element.all(by.css("exam-component button")).get(1).getText().then(function (text) {
+                        expect(text).toBe('17');
+                    });
+                });
+            });
+
+            describe('second click on first link', function () {
+                element.all(by.css("exam-component button")).get(0).click().then(function () {
+                    element.all(by.css("exam-component button")).get(0).getText().then(function (text) {
+                        expect(text).toBe('18');
+                    });
+                });
+            });
+        });
     });
 })();
